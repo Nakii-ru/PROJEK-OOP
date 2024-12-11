@@ -11,16 +11,21 @@ TI.24.A5
 
 class Mahasiswa:
 
-__init__(self, nama, nilai_tugas, nilai_uts, nilai_uas): Konstruktor untuk kelas Mahasiswa, yang menyimpan nama mahasiswa dan nilai tugas, UTS, serta UAS. Konstruktor ini juga menghitung nilai akhir menggunakan metode hitung_nilai_akhir.
+`__init__`(self, nama, nilai_tugas, nilai_uts, nilai_uas): Konstruktor untuk kelas Mahasiswa, yang menyimpan nama mahasiswa dan nilai tugas, UTS, serta UAS. Konstruktor ini juga menghitung nilai akhir menggunakan metode hitung_nilai_akhir.
 
-hitung_nilai_akhir(self): Fungsi ini menghitung nilai akhir berdasarkan bobot nilai tugas (30%), UTS (35%), dan UAS (35%).
+`hitung_nilai_akhir(self)`: Fungsi ini menghitung nilai akhir berdasarkan bobot nilai tugas (30%), UTS (35%), dan UAS (35%).
 
-    class DataMahasiswa:
-        __init__(self): Konstruktor untuk kelas DataMahasiswa yang menginisialisasi daftar mahasiswa kosong (daftar_mahasiswa).
-        tambah(self, mahasiswa: Mahasiswa): Menambahkan objek Mahasiswa ke dalam daftar mahasiswa dan menampilkan pesan konfirmasi.
-        tampilkan(self): Menampilkan daftar mahasiswa beserta nilai tugas, UTS, UAS, dan nilai akhir mereka dalam format tabel.
-        ubah(self, nama, nilai_tugas, nilai_uts, nilai_uas): Mengubah data nilai mahasiswa berdasarkan nama. Jika ditemukan, nilai akan diperbarui, dan nilai akhir akan dihitung ulang.
-        hapus(self, nama): Menghapus data mahasiswa berdasarkan nama. Jika mahasiswa ditemukan, data akan dihapus dari daftar mahasiswa.
+`class DataMahasiswa`:
+        
+`__init__(self)`: Konstruktor untuk kelas DataMahasiswa yang menginisialisasi daftar mahasiswa kosong (daftar_mahasiswa).
+        
+`tambah(self, mahasiswa: Mahasiswa)`: Menambahkan objek Mahasiswa ke dalam daftar mahasiswa dan menampilkan pesan konfirmasi.
+        
+`tampilkan(self)`: Menampilkan daftar mahasiswa beserta nilai tugas, UTS, UAS, dan nilai akhir mereka dalam format tabel.
+        
+`ubah(self, nama, nilai_tugas, nilai_uts, nilai_uas)`: Mengubah data nilai mahasiswa berdasarkan nama. Jika ditemukan, nilai akan diperbarui, dan nilai akhir akan dihitung ulang.
+        
+`hapus(self, nama)`: Menghapus data mahasiswa berdasarkan nama. Jika mahasiswa ditemukan, data akan dihapus dari daftar mahasiswa.
 ```python
 class Mahasiswa:
     def __init__(self, nama, nilai_tugas, nilai_uts, nilai_uas):
